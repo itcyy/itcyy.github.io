@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>变量声明 | 阿诺斯编程学习基地</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="欢迎来到我的地盘">
+    
+    <link rel="preload" href="/assets/css/0.styles.e8e4f3a3.css" as="style"><link rel="preload" href="/assets/js/app.c7e71d16.js" as="script"><link rel="preload" href="/assets/js/2.733019b2.js" as="script"><link rel="preload" href="/assets/js/16.778523ff.js" as="script"><link rel="prefetch" href="/assets/js/10.42fb2994.js"><link rel="prefetch" href="/assets/js/11.07a7926b.js"><link rel="prefetch" href="/assets/js/12.f14ef4bc.js"><link rel="prefetch" href="/assets/js/13.bad5c579.js"><link rel="prefetch" href="/assets/js/14.b4f2a0cc.js"><link rel="prefetch" href="/assets/js/15.fbcdfabd.js"><link rel="prefetch" href="/assets/js/17.e40f4083.js"><link rel="prefetch" href="/assets/js/18.a47bc1c5.js"><link rel="prefetch" href="/assets/js/19.2119da09.js"><link rel="prefetch" href="/assets/js/20.9341006e.js"><link rel="prefetch" href="/assets/js/21.3d47724d.js"><link rel="prefetch" href="/assets/js/22.17b4245a.js"><link rel="prefetch" href="/assets/js/23.6508d180.js"><link rel="prefetch" href="/assets/js/24.896cf2e4.js"><link rel="prefetch" href="/assets/js/25.5f0bc684.js"><link rel="prefetch" href="/assets/js/26.4c4d6f2d.js"><link rel="prefetch" href="/assets/js/27.1dd4ea73.js"><link rel="prefetch" href="/assets/js/28.137d32b4.js"><link rel="prefetch" href="/assets/js/29.44258244.js"><link rel="prefetch" href="/assets/js/3.1aa3be4a.js"><link rel="prefetch" href="/assets/js/30.f746f063.js"><link rel="prefetch" href="/assets/js/4.d12742be.js"><link rel="prefetch" href="/assets/js/5.216cae74.js"><link rel="prefetch" href="/assets/js/6.2d0a63f8.js"><link rel="prefetch" href="/assets/js/7.9c9172a7.js"><link rel="prefetch" href="/assets/js/8.113fcfe2.js"><link rel="prefetch" href="/assets/js/9.ac509f23.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e8e4f3a3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/index.png" alt="阿诺斯编程学习基地" class="logo"> <span class="site-name can-hide">阿诺斯编程学习基地</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/zh/guide/go/" class="nav-link router-link-active">
+  Go开发
+</a></div><div class="nav-item"><a href="/zh/guide/gin/" class="nav-link">
+  Gin
+</a></div><div class="nav-item"><a href="/zh/guide/blog/" class="nav-link">
+  Go博客
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="HarmonyOS" class="dropdown-title"><span class="title">HarmonyOS</span> <span class="arrow down"></span></button> <button type="button" aria-label="HarmonyOS" class="mobile-dropdown-title"><span class="title">HarmonyOS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/hos/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/zh/guide/hos/ets/" class="nav-link">
+  eTS
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/zh/guide/go/" class="nav-link router-link-active">
+  Go开发
+</a></div><div class="nav-item"><a href="/zh/guide/gin/" class="nav-link">
+  Gin
+</a></div><div class="nav-item"><a href="/zh/guide/blog/" class="nav-link">
+  Go博客
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="HarmonyOS" class="dropdown-title"><span class="title">HarmonyOS</span> <span class="arrow down"></span></button> <button type="button" aria-label="HarmonyOS" class="mobile-dropdown-title"><span class="title">HarmonyOS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/hos/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/zh/guide/hos/ets/" class="nav-link">
+  eTS
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/zh/guide/go/" aria-current="page" class="sidebar-link">Go历史</a></li><li><a href="/zh/guide/go/02.html" aria-current="page" class="active sidebar-link">变量声明</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/guide/go/02.html#标准格式" class="sidebar-link">标准格式</a></li><li class="sidebar-sub-header"><a href="/zh/guide/go/02.html#基本类型" class="sidebar-link">基本类型</a></li><li class="sidebar-sub-header"><a href="/zh/guide/go/02.html#不指明变量类型" class="sidebar-link">不指明变量类型</a></li><li class="sidebar-sub-header"><a href="/zh/guide/go/02.html#批量格式" class="sidebar-link">批量格式</a></li><li class="sidebar-sub-header"><a href="/zh/guide/go/02.html#简短格式" class="sidebar-link">简短格式</a></li><li class="sidebar-sub-header"><a href="/zh/guide/go/02.html#局部变量" class="sidebar-link">局部变量</a></li><li class="sidebar-sub-header"><a href="/zh/guide/go/02.html#全局变量" class="sidebar-link">全局变量</a></li><li class="sidebar-sub-header"><a href="/zh/guide/go/02.html#形式参数" class="sidebar-link">形式参数</a></li></ul></li><li><a href="/zh/guide/go/03.html" class="sidebar-link">整型</a></li><li><a href="/zh/guide/go/04.html" class="sidebar-link">常量</a></li><li><a href="/zh/guide/go/05.html" class="sidebar-link">数组</a></li><li><a href="/zh/guide/go/06.html" class="sidebar-link">条件</a></li><li><a href="/zh/guide/go/07.html" class="sidebar-link">函数</a></li><li><a href="/zh/guide/go/08.html" class="sidebar-link">结构体</a></li><li><a href="/zh/guide/go/09.html" class="sidebar-link">接口</a></li><li><a href="/zh/guide/go/10.html" class="sidebar-link">包</a></li><li><a href="/zh/guide/go/11.html" class="sidebar-link">并发</a></li><li><a href="/zh/guide/go/12.html" class="sidebar-link">互联网协议</a></li><li><a href="/zh/guide/go/13.html" class="sidebar-link">go数据库(sql,nosql)</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="变量声明"><a href="#变量声明" class="header-anchor">#</a> 变量声明</h1> <blockquote><p>Go语言是静态类型语言，因此变量（variable）是有明确类型的，编译器也会检查变量类型的正确性。</p></blockquote> <p><strong>我们从计算机系统的角度来讲，变量就是一段或者多段内存，用于存储数据</strong></p> <h2 id="标准格式"><a href="#标准格式" class="header-anchor">#</a> 标准格式</h2> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">var</span> 变量名 变量类型
+</code></pre></div><p><code>变量声明以关键字var开头，变量类型后置，行尾无须分号</code></p> <p><strong>举个例子</strong></p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">//声明了一个名为age的变量，类型为int</span>
+<span class="token keyword">var</span> age <span class="token builtin">int</span>
+</code></pre></div><blockquote><p>如果你学过C语言，就会体会到这样声明的好处，比如C语言这样声明：int* a, b ，那么只有a是指针，b不是，这样会使人迷惑，如果想要两个变量都为指针，需要这样定义：<code>int *a,*b</code>。</p> <p>在go语言中，我们使用这样的声明方式：<code>var a,b *int</code>，就可以轻松的将a，b都声明为指针。</p></blockquote> <p><strong>变量的命名规则遵循驼峰命名法，即首个单词小写，每个新单词的首字母大写，例如： startDate</strong></p> <h2 id="基本类型"><a href="#基本类型" class="header-anchor">#</a> 基本类型</h2> <p><strong>计算机中数据存储的最小单位为bit（位），0或者1</strong></p> <p><strong>byte：计算机中数据的基本单元，1字节=8bit，数据在计算机中存储或者计算，至少为1个字节</strong></p> <ul><li>bool</li> <li>string</li> <li>int（随系统，一般是占用4个字节）、int8(占一个字节)、int16(占两个字节)、int32(占4个字节)、int64（占8个字节）</li> <li>uint（无符号整数）、uint8、uint16、uint32、uint64、uintptr</li> <li>byte // <code>uint8 的别名</code></li> <li>rune // <code>int32 的别名 代表一个 Unicode 码</code></li> <li>float32、float64</li> <li>complex64、complex128</li></ul> <blockquote><p>有符号和无符号的区别：int8 范围 -128-127，uint8 范围：0-255</p></blockquote> <p>当一个变量被声明之后，系统自动赋予它该类型的零值：</p> <p><code>int 为 0</code>，<code>float 为 0.0</code>，<code>bool 为 false</code>，<code>string 为空字符串</code>，<code>指针为 nil</code></p> <p><strong>所有的内存在 Go 中都是经过初始化的。</strong></p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">var</span> age <span class="token builtin">int</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="不指明变量类型"><a href="#不指明变量类型" class="header-anchor">#</a> 不指明变量类型</h2> <div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">//设置游戏中角色的初始等级为1</span>
+<span class="token keyword">var</span> level <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre></div><p>像上面这种声明变量的方式，并没有指明类型，Go语言中，<code>在编译时会自动推导类型</code></p> <p>我们可以使用</p> <div class="language-go extra-class"><pre class="language-go"><code>fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;%T&quot;</span><span class="token punctuation">,</span> level<span class="token punctuation">)</span>
+</code></pre></div><p>进行类型输出。</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">var</span> level <span class="token operator">=</span> <span class="token number">1</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;%T&quot;</span><span class="token punctuation">,</span>level<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="批量格式"><a href="#批量格式" class="header-anchor">#</a> 批量格式</h2> <blockquote><p>觉得每行都用 var 声明变量比较烦琐？Go语言提供了批量声明的方式</p></blockquote> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">var</span> <span class="token punctuation">(</span>
+    a <span class="token builtin">int</span>
+    b <span class="token builtin">string</span>
+    c <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">float32</span>
+<span class="token punctuation">)</span>
+</code></pre></div><div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+
+<span class="token keyword">var</span> <span class="token punctuation">(</span>
+	a <span class="token builtin">int</span>
+	b <span class="token builtin">string</span>
+	c <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">float32</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//%d 整数占位符，%s 字符串占位符， %f 浮点数占位符(默认精度为6)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d,%s,%f&quot;</span><span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="简短格式"><a href="#简短格式" class="header-anchor">#</a> 简短格式</h2> <blockquote><p>我们可以省略<code>var</code>关键字，这样写起来更加便捷</p></blockquote> <div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">//i是变量名 1 是值（或者表达式）</span>
+i <span class="token operator">:=</span> <span class="token number">1</span>
+</code></pre></div><p><strong>上面讲过，如果不指明类型，直接赋值，Go会自动推导类型</strong></p> <p>使用简短格式有以下限制：</p> <ol><li>定义变量，同时显式初始化</li> <li>不能提供数据类型</li> <li>只能用在函数内部</li></ol> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token comment">//不能</span>
+<span class="token comment">//aa :=1</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	aa <span class="token operator">:=</span><span class="token number">1</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>aa<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>简短变量声明被广泛用于大部分的局部变量的声明和初始化，var 形式的声明语句往往用于需要显式指定变量类型的地方</strong></p> <h1 id="初始化变量"><a href="#初始化变量" class="header-anchor">#</a> 初始化变量</h1> <div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">//创建了一个游戏角色 初始等级为1</span>
+<span class="token keyword">var</span> level <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">1</span>
+</code></pre></div><div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">//短变量声明</span>
+level <span class="token operator">:=</span> <span class="token number">1</span>
+</code></pre></div><p>以下的代码会出错：</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	
+	<span class="token keyword">var</span> level <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">1</span>
+    <span class="token comment">// 再次声明并赋值 会报错 no new variables on left side of := （左边的变量已经被声明了，不能重复声明）</span>
+	level <span class="token operator">:=</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>但是有特例</strong></p> <p>比如：<code>net.Dial</code>提供按指定协议和地址发起网络连接，这个函数有两个返回值，一个是<code>连接对象（conn）</code>，一个是<code>错误对象（err）</code></p> <p>正常的写法：</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;fmt&quot;</span>
+	<span class="token string">&quot;net&quot;</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+	<span class="token keyword">var</span> conn net<span class="token punctuation">.</span>Conn
+	<span class="token keyword">var</span> err <span class="token builtin">error</span>
+	conn<span class="token punctuation">,</span> err <span class="token operator">=</span> net<span class="token punctuation">.</span><span class="token function">Dial</span><span class="token punctuation">(</span><span class="token string">&quot;tcp&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;127.0.0.1:8080&quot;</span><span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>conn<span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>短变量的写法：</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;fmt&quot;</span>
+	<span class="token string">&quot;net&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+	conn<span class="token punctuation">,</span> err <span class="token operator">:=</span> net<span class="token punctuation">.</span><span class="token function">Dial</span><span class="token punctuation">(</span><span class="token string">&quot;tcp&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;127.0.0.1:8080&quot;</span><span class="token punctuation">)</span>
+	conn1<span class="token punctuation">,</span> err <span class="token operator">:=</span> net<span class="token punctuation">.</span><span class="token function">Dial</span><span class="token punctuation">(</span><span class="token string">&quot;tcp&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;127.0.0.1:8080&quot;</span><span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>conn<span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>conn1<span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>在多个短变量声明和赋值中，至少有一个新声明的变量出现在左值中，即便其他变量名可能是重复声明的，编译器也不会报错</strong></p> <h1 id="小demo"><a href="#小demo" class="header-anchor">#</a> 小demo</h1> <blockquote><p>变量交换，比如a=100，b=200，交换之后 a=200，b=100</p></blockquote> <p>如果是你，你会怎么样进行实现呢？</p> <p><strong>第一种</strong></p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	a <span class="token operator">:=</span> <span class="token number">100</span>
+	b <span class="token operator">:=</span> <span class="token number">200</span>
+	<span class="token keyword">var</span> c <span class="token builtin">int</span>
+	c <span class="token operator">=</span> b
+	b <span class="token operator">=</span> a
+	a <span class="token operator">=</span> c
+	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;a=%d,b=%d&quot;</span><span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>第二种</strong></p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	a <span class="token operator">:=</span> <span class="token number">100</span>
+	b <span class="token operator">:=</span> <span class="token number">200</span>
+
+	a <span class="token operator">=</span> a<span class="token operator">^</span>b
+	b <span class="token operator">=</span> b<span class="token operator">^</span>a
+	a <span class="token operator">=</span> a<span class="token operator">^</span>b
+	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;a=%d,b=%d&quot;</span><span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>第三种</strong></p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	a <span class="token operator">:=</span> <span class="token number">100</span>
+	b <span class="token operator">:=</span> <span class="token number">200</span>
+	b<span class="token punctuation">,</span>a <span class="token operator">=</span> a<span class="token punctuation">,</span>b
+	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;a=%d,b=%d&quot;</span><span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>应该有点体会到Go语言编程的快捷，方便以及强大了吧</p></blockquote> <h1 id="匿名变量"><a href="#匿名变量" class="header-anchor">#</a> 匿名变量</h1> <p>使用<code>多重赋值</code>时，如果<code>不需要在左值中接受变量</code>，可以使用匿名变量</p> <p>比如上面的例子:</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;fmt&quot;</span>
+	<span class="token string">&quot;net&quot;</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">//conn, err := net.Dial(&quot;tcp&quot;, &quot;127.0.0.1:8080&quot;)</span>
+    <span class="token comment">//如果不想接收err的值，那么可以使用_表示，这就是匿名变量</span>
+    conn<span class="token punctuation">,</span> <span class="token boolean">_</span> <span class="token operator">:=</span> net<span class="token punctuation">.</span><span class="token function">Dial</span><span class="token punctuation">(</span><span class="token string">&quot;tcp&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;127.0.0.1:8080&quot;</span><span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>conn<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>匿名变量以“_”下划线表示</p> <p>匿名变量不占用命名空间，也不会分配内存。匿名变量可以重复声明使用</p></blockquote> <p><strong>“_”本身就是一个特殊的标识符，被称为空白标识符。它可以像其他标识符那样用于变量的声明或赋值（任何类型都可以赋值给它），但任何赋给这个标识符的值都将被抛弃，因此这些值不能在后续的代码中使用，也不可以使用这个标识符作为变量对其它变量进行赋值或运算。</strong></p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;fmt&quot;</span>
+	<span class="token string">&quot;net&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+	conn<span class="token punctuation">,</span> <span class="token boolean">_</span> <span class="token operator">:=</span> net<span class="token punctuation">.</span><span class="token function">Dial</span><span class="token punctuation">(</span><span class="token string">&quot;tcp&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;127.0.0.1:8080&quot;</span><span class="token punctuation">)</span>
+	<span class="token comment">//匿名变量可以重复声明</span>
+	conn1<span class="token punctuation">,</span> <span class="token boolean">_</span> <span class="token operator">:=</span> net<span class="token punctuation">.</span><span class="token function">Dial</span><span class="token punctuation">(</span><span class="token string">&quot;tcp&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;127.0.0.1:8080&quot;</span><span class="token punctuation">)</span>
+	<span class="token comment">// 匿名变量不可以直接开头</span>
+	<span class="token comment">// _ :=1</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>conn<span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>conn1<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h1 id="作用域"><a href="#作用域" class="header-anchor">#</a> 作用域</h1> <blockquote><p>一个变量（常量、类型或函数）在程序中都有一定的作用范围，称之为<code>作用域</code>。</p></blockquote> <p>了解变量的作用域对我们学习Go语言来说是比较重要的，因为<code>Go语言(静态语言)会在编译时检查每个变量是否使用过，一旦出现未使用的变量，就会报编译错误</code>。</p> <p>如果不能理解变量的作用域，就有可能会带来一些不明所以的编译错误。</p> <p>根据变量定义位置的不同，可以分为以下三个类型：</p> <ul><li>函数内定义的变量称为局部变量</li> <li>函数外定义的变量称为全局变量</li> <li>函数定义中的变量称为形式参数</li></ul> <h2 id="局部变量"><a href="#局部变量" class="header-anchor">#</a> 局部变量</h2> <p>在函数体内声明的变量称之为<code>局部变量</code>，它们的作用域<code>只在函数体内</code>，函数的参数和返回值变量都属于局部变量。</p> <p><strong>局部变量不是一直存在的，它只在定义它的函数被调用后存在，函数调用结束后这个局部变量就会被销毁。</strong></p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+    <span class="token string">&quot;fmt&quot;</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//声明局部变量 a 和 b 并赋值</span>
+    <span class="token keyword">var</span> a <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">3</span>
+    <span class="token keyword">var</span> b <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">4</span>
+    <span class="token comment">//声明局部变量 c 并计算 a 和 b 的和</span>
+    c <span class="token operator">:=</span> a <span class="token operator">+</span> b
+    fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;a = %d, b = %d, c = %d\n&quot;</span><span class="token punctuation">,</span> a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="全局变量"><a href="#全局变量" class="header-anchor">#</a> 全局变量</h2> <p>在函数体外声明的变量称之为<code>全局变量</code>，全局变量只需要在<code>一个源文件中定义，就可以在所有源文件中使用</code>，当然，不包含这个全局变量的源文件需要使用“import”关键字引入全局变量所在的源文件之后才能使用这个全局变量。</p> <p>全局变量声明<code>必须以 var 关键字开头</code>，如果想要在外部包中使用全局变量的<code>首字母必须大写</code>。</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+<span class="token comment">//声明全局变量</span>
+<span class="token keyword">var</span> c <span class="token builtin">int</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//声明局部变量</span>
+    <span class="token keyword">var</span> a<span class="token punctuation">,</span> b <span class="token builtin">int</span>
+    <span class="token comment">//初始化参数</span>
+    a <span class="token operator">=</span> <span class="token number">3</span>
+    b <span class="token operator">=</span> <span class="token number">4</span>
+    c <span class="token operator">=</span> a <span class="token operator">+</span> b
+    fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;a = %d, b = %d, c = %d\n&quot;</span><span class="token punctuation">,</span> a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>Go语言程序中全局变量与局部变量名称可以相同，但是函数体内的局部变量会被优先考虑。</strong></p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+<span class="token comment">//声明全局变量</span>
+<span class="token keyword">var</span> bb <span class="token builtin">float32</span> <span class="token operator">=</span> <span class="token number">3.14</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	bb <span class="token operator">:=</span> <span class="token number">3</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>bb<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//执行结果 3</span>
+</code></pre></div><h2 id="形式参数"><a href="#形式参数" class="header-anchor">#</a> 形式参数</h2> <p>在定义函数时函数名后面括号中的变量叫做<code>形式参数</code>（简称形参）。形式参数只在函数调用时才会生效，函数调用结束后就会被销毁，在函数未被调用时，函数的形参<code>并不占用实际的存储单元</code>，也没有实际值。</p> <p>形式参数会作为<code>函数的局部变量来使用</code>。</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+    <span class="token string">&quot;fmt&quot;</span>
+<span class="token punctuation">)</span>
+<span class="token comment">//全局变量 a</span>
+<span class="token keyword">var</span> a <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">13</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//局部变量 a 和 b</span>
+    <span class="token keyword">var</span> a <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">3</span>
+    <span class="token keyword">var</span> b <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">4</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;main() 函数中 a = %d\n&quot;</span><span class="token punctuation">,</span> a<span class="token punctuation">)</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;main() 函数中 b = %d\n&quot;</span><span class="token punctuation">,</span> b<span class="token punctuation">)</span>
+    c <span class="token operator">:=</span> <span class="token function">sum</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;main() 函数中 c = %d\n&quot;</span><span class="token punctuation">,</span> c<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">sum</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token builtin">int</span> <span class="token punctuation">{</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;sum() 函数中 a = %d\n&quot;</span><span class="token punctuation">,</span> a<span class="token punctuation">)</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;sum() 函数中 b = %d\n&quot;</span><span class="token punctuation">,</span> b<span class="token punctuation">)</span>
+    num <span class="token operator">:=</span> a <span class="token operator">+</span> b
+    <span class="token keyword">return</span> num
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>至此，Go语言变量相关的知识，我们就掌握了</strong></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zh/guide/go/" class="prev router-link-active">
+        Go历史
+      </a></span> <span class="next"><a href="/zh/guide/go/03.html">
+        整型
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c7e71d16.js" defer></script><script src="/assets/js/2.733019b2.js" defer></script><script src="/assets/js/16.778523ff.js" defer></script>
+  </body>
+</html>

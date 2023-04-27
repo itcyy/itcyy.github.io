@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>模板加载 | 阿诺斯编程学习基地</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="欢迎来到我的地盘">
+    
+    <link rel="preload" href="/assets/css/0.styles.e8e4f3a3.css" as="style"><link rel="preload" href="/assets/js/app.c7e71d16.js" as="script"><link rel="preload" href="/assets/js/2.733019b2.js" as="script"><link rel="preload" href="/assets/js/8.113fcfe2.js" as="script"><link rel="prefetch" href="/assets/js/10.42fb2994.js"><link rel="prefetch" href="/assets/js/11.07a7926b.js"><link rel="prefetch" href="/assets/js/12.f14ef4bc.js"><link rel="prefetch" href="/assets/js/13.bad5c579.js"><link rel="prefetch" href="/assets/js/14.b4f2a0cc.js"><link rel="prefetch" href="/assets/js/15.fbcdfabd.js"><link rel="prefetch" href="/assets/js/16.778523ff.js"><link rel="prefetch" href="/assets/js/17.e40f4083.js"><link rel="prefetch" href="/assets/js/18.a47bc1c5.js"><link rel="prefetch" href="/assets/js/19.2119da09.js"><link rel="prefetch" href="/assets/js/20.9341006e.js"><link rel="prefetch" href="/assets/js/21.3d47724d.js"><link rel="prefetch" href="/assets/js/22.17b4245a.js"><link rel="prefetch" href="/assets/js/23.6508d180.js"><link rel="prefetch" href="/assets/js/24.896cf2e4.js"><link rel="prefetch" href="/assets/js/25.5f0bc684.js"><link rel="prefetch" href="/assets/js/26.4c4d6f2d.js"><link rel="prefetch" href="/assets/js/27.1dd4ea73.js"><link rel="prefetch" href="/assets/js/28.137d32b4.js"><link rel="prefetch" href="/assets/js/29.44258244.js"><link rel="prefetch" href="/assets/js/3.1aa3be4a.js"><link rel="prefetch" href="/assets/js/30.f746f063.js"><link rel="prefetch" href="/assets/js/4.d12742be.js"><link rel="prefetch" href="/assets/js/5.216cae74.js"><link rel="prefetch" href="/assets/js/6.2d0a63f8.js"><link rel="prefetch" href="/assets/js/7.9c9172a7.js"><link rel="prefetch" href="/assets/js/9.ac509f23.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e8e4f3a3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/index.png" alt="阿诺斯编程学习基地" class="logo"> <span class="site-name can-hide">阿诺斯编程学习基地</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/zh/guide/go/" class="nav-link">
+  Go开发
+</a></div><div class="nav-item"><a href="/zh/guide/gin/" class="nav-link">
+  Gin
+</a></div><div class="nav-item"><a href="/zh/guide/blog/" class="nav-link router-link-active">
+  Go博客
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="HarmonyOS" class="dropdown-title"><span class="title">HarmonyOS</span> <span class="arrow down"></span></button> <button type="button" aria-label="HarmonyOS" class="mobile-dropdown-title"><span class="title">HarmonyOS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/hos/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/zh/guide/hos/ets/" class="nav-link">
+  eTS
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/zh/guide/go/" class="nav-link">
+  Go开发
+</a></div><div class="nav-item"><a href="/zh/guide/gin/" class="nav-link">
+  Gin
+</a></div><div class="nav-item"><a href="/zh/guide/blog/" class="nav-link router-link-active">
+  Go博客
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="HarmonyOS" class="dropdown-title"><span class="title">HarmonyOS</span> <span class="arrow down"></span></button> <button type="button" aria-label="HarmonyOS" class="mobile-dropdown-title"><span class="title">HarmonyOS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/hos/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/zh/guide/hos/ets/" class="nav-link">
+  eTS
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/zh/guide/blog/" aria-current="page" class="sidebar-link">初识Go博客</a></li><li><a href="/zh/guide/blog/02.html" aria-current="page" class="active sidebar-link">模板加载</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/guide/blog/02.html#_1-静态资源加载" class="sidebar-link">1. 静态资源加载</a></li><li class="sidebar-sub-header"><a href="/zh/guide/blog/02.html#_2-路由" class="sidebar-link">2. 路由</a></li><li class="sidebar-sub-header"><a href="/zh/guide/blog/02.html#_3-模板处理" class="sidebar-link">3. 模板处理</a></li></ul></li><li><a href="/zh/guide/blog/03.html" class="sidebar-link">读取数据库数据</a></li><li><a href="/zh/guide/blog/04.html" class="sidebar-link">登录</a></li><li><a href="/zh/guide/blog/05.html" class="sidebar-link">写文章</a></li><li><a href="/zh/guide/blog/06.html" class="sidebar-link">归档搜索</a></li><li><a href="/zh/guide/blog/07.html" class="sidebar-link">优化</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="模板加载"><a href="#模板加载" class="header-anchor">#</a> 模板加载</h1> <h2 id="_1-静态资源加载"><a href="#_1-静态资源加载" class="header-anchor">#</a> 1. 静态资源加载</h2> <blockquote><p>前面我们虽然首页显示出来了，但是js这些并没有加载，使用下面的方式将/resource/js/index.js这样的请求路径映射到/public对应的文件夹下</p></blockquote> <div class="language-go extra-class"><pre class="language-go"><code>http<span class="token punctuation">.</span><span class="token function">Handle</span><span class="token punctuation">(</span><span class="token string">&quot;/resource/&quot;</span><span class="token punctuation">,</span>http<span class="token punctuation">.</span><span class="token function">StripPrefix</span><span class="token punctuation">(</span><span class="token string">&quot;/resource/&quot;</span><span class="token punctuation">,</span>http<span class="token punctuation">.</span><span class="token function">FileServer</span><span class="token punctuation">(</span>http<span class="token punctuation">.</span><span class="token function">Dir</span><span class="token punctuation">(</span><span class="token string">&quot;public/resource/&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="_2-路由"><a href="#_2-路由" class="header-anchor">#</a> 2. 路由</h2> <div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">//router/router.go</span>
+<span class="token keyword">package</span> router
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;ms-go-blog/api&quot;</span>
+	<span class="token string">&quot;ms-go-blog/views&quot;</span>
+	<span class="token string">&quot;net/http&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">Router</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+	<span class="token comment">//1. 页面  views 2. api 数据（json） 3. 静态资源</span>
+	http<span class="token punctuation">.</span><span class="token function">HandleFunc</span><span class="token punctuation">(</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">,</span>views<span class="token punctuation">.</span>HTML<span class="token punctuation">.</span>Index<span class="token punctuation">)</span>
+	http<span class="token punctuation">.</span><span class="token function">HandleFunc</span><span class="token punctuation">(</span><span class="token string">&quot;/api/v1/post&quot;</span><span class="token punctuation">,</span>api<span class="token punctuation">.</span>API<span class="token punctuation">.</span>SaveAndUpdatePost<span class="token punctuation">)</span>
+	http<span class="token punctuation">.</span><span class="token function">Handle</span><span class="token punctuation">(</span><span class="token string">&quot;/resource/&quot;</span><span class="token punctuation">,</span>http<span class="token punctuation">.</span><span class="token function">StripPrefix</span><span class="token punctuation">(</span><span class="token string">&quot;/resource/&quot;</span><span class="token punctuation">,</span>http<span class="token punctuation">.</span><span class="token function">FileServer</span><span class="token punctuation">(</span>http<span class="token punctuation">.</span><span class="token function">Dir</span><span class="token punctuation">(</span><span class="token string">&quot;public/resource/&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">//views/views.go</span>
+<span class="token keyword">package</span> views
+
+<span class="token keyword">var</span> HTML <span class="token operator">=</span> <span class="token operator">&amp;</span>HTMLApi<span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">type</span> HTMLApi <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre></div><div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">//views/index.go</span>
+<span class="token keyword">package</span> views
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;html/template&quot;</span>
+	<span class="token string">&quot;log&quot;</span>
+	<span class="token string">&quot;ms-go-blog/config&quot;</span>
+	<span class="token string">&quot;ms-go-blog/models&quot;</span>
+	<span class="token string">&quot;net/http&quot;</span>
+	<span class="token string">&quot;time&quot;</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">func</span> <span class="token function">IsODD</span><span class="token punctuation">(</span>num <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token builtin">bool</span>  <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> num<span class="token operator">%</span><span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">GetNextName</span><span class="token punctuation">(</span>strs <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">,</span>index <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token builtin">string</span><span class="token punctuation">{</span>
+	<span class="token keyword">return</span> strs<span class="token punctuation">[</span>index<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">Date</span><span class="token punctuation">(</span>layout <span class="token builtin">string</span><span class="token punctuation">)</span>  <span class="token builtin">string</span><span class="token punctuation">{</span>
+	<span class="token keyword">return</span> time<span class="token punctuation">.</span><span class="token function">Now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Format</span><span class="token punctuation">(</span>layout<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span><span class="token operator">*</span>HTMLApi<span class="token punctuation">)</span> <span class="token function">Index</span><span class="token punctuation">(</span>w http<span class="token punctuation">.</span>ResponseWriter<span class="token punctuation">,</span>r <span class="token operator">*</span>http<span class="token punctuation">.</span>Request<span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+	t <span class="token operator">:=</span> template<span class="token punctuation">.</span><span class="token function">New</span><span class="token punctuation">(</span><span class="token string">&quot;index.html&quot;</span><span class="token punctuation">)</span>
+	<span class="token comment">//1. 拿到当前的路径</span>
+	path<span class="token operator">:=</span> config<span class="token punctuation">.</span>Cfg<span class="token punctuation">.</span>System<span class="token punctuation">.</span>CurrentDir
+	<span class="token comment">//访问博客首页模板的时候，因为有多个模板的嵌套，解析文件的时候，需要将其涉及到的所有模板都进行解析</span>
+	home <span class="token operator">:=</span> path <span class="token operator">+</span> <span class="token string">&quot;/template/home.html&quot;</span>
+	header <span class="token operator">:=</span> path <span class="token operator">+</span> <span class="token string">&quot;/template/layout/header.html&quot;</span>
+	footer <span class="token operator">:=</span> path <span class="token operator">+</span> <span class="token string">&quot;/template/layout/footer.html&quot;</span>
+	personal <span class="token operator">:=</span> path <span class="token operator">+</span> <span class="token string">&quot;/template/layout/personal.html&quot;</span>
+	post <span class="token operator">:=</span> path <span class="token operator">+</span> <span class="token string">&quot;/template/layout/post-list.html&quot;</span>
+	pagination <span class="token operator">:=</span> path <span class="token operator">+</span> <span class="token string">&quot;/template/layout/pagination.html&quot;</span>
+	t<span class="token punctuation">.</span><span class="token function">Funcs</span><span class="token punctuation">(</span>template<span class="token punctuation">.</span>FuncMap<span class="token punctuation">{</span><span class="token string">&quot;isODD&quot;</span><span class="token punctuation">:</span>IsODD<span class="token punctuation">,</span><span class="token string">&quot;getNextName&quot;</span><span class="token punctuation">:</span>GetNextName<span class="token punctuation">,</span><span class="token string">&quot;date&quot;</span><span class="token punctuation">:</span>Date<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	t<span class="token punctuation">,</span>err <span class="token operator">:=</span> t<span class="token punctuation">.</span><span class="token function">ParseFiles</span><span class="token punctuation">(</span>path <span class="token operator">+</span> <span class="token string">&quot;/template/index.html&quot;</span><span class="token punctuation">,</span>home<span class="token punctuation">,</span>header<span class="token punctuation">,</span>footer<span class="token punctuation">,</span>personal<span class="token punctuation">,</span>post<span class="token punctuation">,</span>pagination<span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		log<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;解析模板出错：&quot;</span><span class="token punctuation">,</span>err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+	<span class="token comment">//页面上涉及到的所有的数据，必须有定义</span>
+	<span class="token keyword">var</span> categorys <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>models<span class="token punctuation">.</span>Category<span class="token punctuation">{</span>
+		<span class="token punctuation">{</span>
+			Cid<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+			Name<span class="token punctuation">:</span> <span class="token string">&quot;go&quot;</span><span class="token punctuation">,</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">var</span> posts <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>models<span class="token punctuation">.</span>PostMore<span class="token punctuation">{</span>
+		<span class="token punctuation">{</span>
+			Pid<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+			Title<span class="token punctuation">:</span> <span class="token string">&quot;go博客&quot;</span><span class="token punctuation">,</span>
+			Content<span class="token punctuation">:</span> <span class="token string">&quot;内容&quot;</span><span class="token punctuation">,</span>
+			UserName<span class="token punctuation">:</span> <span class="token string">&quot;程序员阿诺斯&quot;</span><span class="token punctuation">,</span>
+			ViewCount<span class="token punctuation">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+			CreateAt<span class="token punctuation">:</span> <span class="token string">&quot;2022-02-20&quot;</span><span class="token punctuation">,</span>
+			CategoryId<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+			CategoryName<span class="token punctuation">:</span> <span class="token string">&quot;go&quot;</span><span class="token punctuation">,</span>
+			Type<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">var</span> hr <span class="token operator">=</span> <span class="token operator">&amp;</span>models<span class="token punctuation">.</span>HomeResponse<span class="token punctuation">{</span>
+		config<span class="token punctuation">.</span>Cfg<span class="token punctuation">.</span>Viewer<span class="token punctuation">,</span>
+		categorys<span class="token punctuation">,</span>
+		posts<span class="token punctuation">,</span>
+		<span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token boolean">true</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span>
+	t<span class="token punctuation">.</span><span class="token function">Execute</span><span class="token punctuation">(</span>w<span class="token punctuation">,</span>hr<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+
+</code></pre></div><div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">//api/api.go</span>
+<span class="token keyword">package</span> api
+
+<span class="token keyword">var</span> API <span class="token operator">=</span> <span class="token operator">&amp;</span>Api<span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">type</span> Api <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">//api/post.go</span>
+<span class="token keyword">package</span> api
+
+<span class="token keyword">import</span> <span class="token string">&quot;net/http&quot;</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span><span class="token operator">*</span>Api<span class="token punctuation">)</span> <span class="token function">SaveAndUpdatePost</span><span class="token punctuation">(</span>w http<span class="token punctuation">.</span>ResponseWriter<span class="token punctuation">,</span>r <span class="token operator">*</span>http<span class="token punctuation">.</span>Request<span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre></div><div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;log&quot;</span>
+	<span class="token string">&quot;ms-go-blog/router&quot;</span>
+	<span class="token string">&quot;net/http&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+	<span class="token comment">//程序入口，一个项目 只能有一个入口</span>
+	<span class="token comment">//web程序，http协议 ip port</span>
+	server <span class="token operator">:=</span> http<span class="token punctuation">.</span>Server<span class="token punctuation">{</span>
+		Addr<span class="token punctuation">:</span> <span class="token string">&quot;127.0.0.1:8080&quot;</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span>
+	<span class="token comment">//路由</span>
+	router<span class="token punctuation">.</span><span class="token function">Router</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">:=</span> server<span class="token punctuation">.</span><span class="token function">ListenAndServe</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>err <span class="token operator">!=</span> <span class="token boolean">nil</span><span class="token punctuation">{</span>
+		log<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h2 id="_3-模板处理"><a href="#_3-模板处理" class="header-anchor">#</a> 3. 模板处理</h2> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> models
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;html/template&quot;</span>
+	<span class="token string">&quot;io&quot;</span>
+	<span class="token string">&quot;log&quot;</span>
+	<span class="token string">&quot;time&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">type</span> TemplateBlog <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+	<span class="token operator">*</span>template<span class="token punctuation">.</span>Template
+<span class="token punctuation">}</span>
+<span class="token keyword">type</span> HtmlTemplate <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+	Index TemplateBlog
+	Category TemplateBlog
+	Custom TemplateBlog
+	Detail TemplateBlog
+	Login TemplateBlog
+	Pigeonhole TemplateBlog
+	Writing TemplateBlog
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>t <span class="token operator">*</span>TemplateBlog<span class="token punctuation">)</span> <span class="token function">WriteData</span><span class="token punctuation">(</span>w io<span class="token punctuation">.</span>Writer<span class="token punctuation">,</span>data <span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+	err <span class="token operator">:=</span> t<span class="token punctuation">.</span><span class="token function">Execute</span><span class="token punctuation">(</span>w<span class="token punctuation">,</span>data<span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		w<span class="token punctuation">.</span><span class="token function">Write</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token function">byte</span><span class="token punctuation">(</span><span class="token string">&quot;error&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">InitTemplate</span><span class="token punctuation">(</span>templateDir <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">(</span>HtmlTemplate<span class="token punctuation">,</span><span class="token builtin">error</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+	tp<span class="token punctuation">,</span>err <span class="token operator">:=</span> <span class="token function">readTemplate</span><span class="token punctuation">(</span>
+		<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">{</span><span class="token string">&quot;index&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;category&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;detail&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;login&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;pigeonhole&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;writing&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+		templateDir<span class="token punctuation">,</span>
+		<span class="token punctuation">)</span>
+	<span class="token keyword">var</span> htmlTemplate HtmlTemplate
+	<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> htmlTemplate<span class="token punctuation">,</span>err
+	<span class="token punctuation">}</span>
+	htmlTemplate<span class="token punctuation">.</span>Index <span class="token operator">=</span> tp<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+	htmlTemplate<span class="token punctuation">.</span>Category <span class="token operator">=</span> tp<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+	htmlTemplate<span class="token punctuation">.</span>Custom <span class="token operator">=</span> tp<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>
+	htmlTemplate<span class="token punctuation">.</span>Detail <span class="token operator">=</span> tp<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span>
+	htmlTemplate<span class="token punctuation">.</span>Login <span class="token operator">=</span> tp<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span>
+	htmlTemplate<span class="token punctuation">.</span>Pigeonhole <span class="token operator">=</span> tp<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span>
+	htmlTemplate<span class="token punctuation">.</span>Writing <span class="token operator">=</span> tp<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span>
+	<span class="token keyword">return</span> htmlTemplate<span class="token punctuation">,</span><span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">IsODD</span><span class="token punctuation">(</span>num <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token builtin">bool</span>  <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> num<span class="token operator">%</span><span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">GetNextName</span><span class="token punctuation">(</span>strs <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">,</span>index <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token builtin">string</span><span class="token punctuation">{</span>
+	<span class="token keyword">return</span> strs<span class="token punctuation">[</span>index<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">Date</span><span class="token punctuation">(</span>layout <span class="token builtin">string</span><span class="token punctuation">)</span>  <span class="token builtin">string</span><span class="token punctuation">{</span>
+	<span class="token keyword">return</span> time<span class="token punctuation">.</span><span class="token function">Now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Format</span><span class="token punctuation">(</span>layout<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">DateDay</span><span class="token punctuation">(</span>date time<span class="token punctuation">.</span>Time<span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> date<span class="token punctuation">.</span><span class="token function">Format</span><span class="token punctuation">(</span><span class="token string">&quot;2006-01-02 15:04:05&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">readTemplate</span><span class="token punctuation">(</span>templates <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">,</span>templateDir <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span>TemplateBlog<span class="token punctuation">,</span><span class="token builtin">error</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+	<span class="token keyword">var</span> tbs <span class="token punctuation">[</span><span class="token punctuation">]</span>TemplateBlog
+	<span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span>view <span class="token operator">:=</span> <span class="token keyword">range</span> templates<span class="token punctuation">{</span>
+		viewName <span class="token operator">:=</span> view<span class="token operator">+</span><span class="token string">&quot;.html&quot;</span>
+		t <span class="token operator">:=</span> template<span class="token punctuation">.</span><span class="token function">New</span><span class="token punctuation">(</span>viewName<span class="token punctuation">)</span>
+		<span class="token comment">//访问博客首页模板的时候，因为有多个模板的嵌套，解析文件的时候，需要将其涉及到的所有模板都进行解析</span>
+		home <span class="token operator">:=</span> templateDir <span class="token operator">+</span> <span class="token string">&quot;home.html&quot;</span>
+		header <span class="token operator">:=</span> templateDir <span class="token operator">+</span> <span class="token string">&quot;layout/header.html&quot;</span>
+		footer <span class="token operator">:=</span> templateDir <span class="token operator">+</span> <span class="token string">&quot;layout/footer.html&quot;</span>
+		personal <span class="token operator">:=</span> templateDir <span class="token operator">+</span> <span class="token string">&quot;layout/personal.html&quot;</span>
+		post <span class="token operator">:=</span> templateDir <span class="token operator">+</span> <span class="token string">&quot;layout/post-list.html&quot;</span>
+		pagination <span class="token operator">:=</span> templateDir <span class="token operator">+</span> <span class="token string">&quot;layout/pagination.html&quot;</span>
+		t<span class="token punctuation">.</span><span class="token function">Funcs</span><span class="token punctuation">(</span>template<span class="token punctuation">.</span>FuncMap<span class="token punctuation">{</span><span class="token string">&quot;isODD&quot;</span><span class="token punctuation">:</span>IsODD<span class="token punctuation">,</span><span class="token string">&quot;getNextName&quot;</span><span class="token punctuation">:</span>GetNextName<span class="token punctuation">,</span><span class="token string">&quot;date&quot;</span><span class="token punctuation">:</span>Date<span class="token punctuation">,</span><span class="token string">&quot;dateDay&quot;</span><span class="token punctuation">:</span>DateDay<span class="token punctuation">}</span><span class="token punctuation">)</span>
+		t<span class="token punctuation">,</span>err <span class="token operator">:=</span> t<span class="token punctuation">.</span><span class="token function">ParseFiles</span><span class="token punctuation">(</span>templateDir <span class="token operator">+</span> viewName<span class="token punctuation">,</span>home<span class="token punctuation">,</span>header<span class="token punctuation">,</span>footer<span class="token punctuation">,</span>personal<span class="token punctuation">,</span>post<span class="token punctuation">,</span>pagination<span class="token punctuation">)</span>
+		<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+			log<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;解析模板出错：&quot;</span><span class="token punctuation">,</span>err<span class="token punctuation">)</span>
+			<span class="token keyword">return</span> <span class="token boolean">nil</span><span class="token punctuation">,</span> err
+		<span class="token punctuation">}</span>
+		<span class="token keyword">var</span> tb TemplateBlog
+		tb<span class="token punctuation">.</span>Template <span class="token operator">=</span> t
+		tbs <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>tbs<span class="token punctuation">,</span>tb<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> tbs<span class="token punctuation">,</span><span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>common/common.go</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> common
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;ms-go-blog/config&quot;</span>
+	<span class="token string">&quot;ms-go-blog/models&quot;</span>
+	<span class="token string">&quot;sync&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> Template models<span class="token punctuation">.</span>HtmlTemplate
+
+<span class="token keyword">func</span> <span class="token function">LoadTemplate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+	w <span class="token operator">:=</span> sync<span class="token punctuation">.</span>WaitGroup<span class="token punctuation">{</span><span class="token punctuation">}</span>
+	w<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+	<span class="token keyword">go</span> <span class="token keyword">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token comment">//耗时</span>
+		<span class="token keyword">var</span> err <span class="token builtin">error</span>
+		Template<span class="token punctuation">,</span>err <span class="token operator">=</span> models<span class="token punctuation">.</span><span class="token function">InitTemplate</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>Cfg<span class="token punctuation">.</span>System<span class="token punctuation">.</span>CurrentDir <span class="token operator">+</span> <span class="token string">&quot;/template/&quot;</span><span class="token punctuation">)</span>
+		<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+			<span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+		<span class="token punctuation">}</span>
+		w<span class="token punctuation">.</span><span class="token function">Done</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	w<span class="token punctuation">.</span><span class="token function">Wait</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>view/index.go</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> views
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;ms-go-blog/common&quot;</span>
+	<span class="token string">&quot;ms-go-blog/config&quot;</span>
+	<span class="token string">&quot;ms-go-blog/models&quot;</span>
+	<span class="token string">&quot;net/http&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span><span class="token operator">*</span>HTMLApi<span class="token punctuation">)</span> <span class="token function">Index</span><span class="token punctuation">(</span>w http<span class="token punctuation">.</span>ResponseWriter<span class="token punctuation">,</span>r <span class="token operator">*</span>http<span class="token punctuation">.</span>Request<span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+	index <span class="token operator">:=</span> common<span class="token punctuation">.</span>Template<span class="token punctuation">.</span>Index
+	<span class="token comment">//页面上涉及到的所有的数据，必须有定义</span>
+	<span class="token keyword">var</span> categorys <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>models<span class="token punctuation">.</span>Category<span class="token punctuation">{</span>
+		<span class="token punctuation">{</span>
+			Cid<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+			Name<span class="token punctuation">:</span> <span class="token string">&quot;go&quot;</span><span class="token punctuation">,</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">var</span> posts <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>models<span class="token punctuation">.</span>PostMore<span class="token punctuation">{</span>
+		<span class="token punctuation">{</span>
+			Pid<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+			Title<span class="token punctuation">:</span> <span class="token string">&quot;go博客&quot;</span><span class="token punctuation">,</span>
+			Content<span class="token punctuation">:</span> <span class="token string">&quot;内容&quot;</span><span class="token punctuation">,</span>
+			UserName<span class="token punctuation">:</span> <span class="token string">&quot;程序员阿诺斯&quot;</span><span class="token punctuation">,</span>
+			ViewCount<span class="token punctuation">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+			CreateAt<span class="token punctuation">:</span> <span class="token string">&quot;2022-02-20&quot;</span><span class="token punctuation">,</span>
+			CategoryId<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+			CategoryName<span class="token punctuation">:</span> <span class="token string">&quot;go&quot;</span><span class="token punctuation">,</span>
+			Type<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">var</span> hr <span class="token operator">=</span> <span class="token operator">&amp;</span>models<span class="token punctuation">.</span>HomeResponse<span class="token punctuation">{</span>
+		config<span class="token punctuation">.</span>Cfg<span class="token punctuation">.</span>Viewer<span class="token punctuation">,</span>
+		categorys<span class="token punctuation">,</span>
+		posts<span class="token punctuation">,</span>
+		<span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token boolean">true</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span>
+
+	index<span class="token punctuation">.</span><span class="token function">WriteData</span><span class="token punctuation">(</span>w<span class="token punctuation">,</span>hr<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+
+</code></pre></div><p>main.go</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;log&quot;</span>
+	<span class="token string">&quot;ms-go-blog/common&quot;</span>
+	<span class="token string">&quot;ms-go-blog/router&quot;</span>
+	<span class="token string">&quot;net/http&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+	<span class="token comment">//模板加载</span>
+	common<span class="token punctuation">.</span><span class="token function">LoadTemplate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+	<span class="token comment">//程序入口，一个项目 只能有一个入口</span>
+	<span class="token comment">//web程序，http协议 ip port</span>
+	server <span class="token operator">:=</span> http<span class="token punctuation">.</span>Server<span class="token punctuation">{</span>
+		Addr<span class="token punctuation">:</span> <span class="token string">&quot;127.0.0.1:8080&quot;</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span>
+	<span class="token comment">//路由</span>
+	router<span class="token punctuation">.</span><span class="token function">Router</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">:=</span> server<span class="token punctuation">.</span><span class="token function">ListenAndServe</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>err <span class="token operator">!=</span> <span class="token boolean">nil</span><span class="token punctuation">{</span>
+		log<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zh/guide/blog/" class="prev router-link-active">
+        初识Go博客
+      </a></span> <span class="next"><a href="/zh/guide/blog/03.html">
+        读取数据库数据
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c7e71d16.js" defer></script><script src="/assets/js/2.733019b2.js" defer></script><script src="/assets/js/8.113fcfe2.js" defer></script>
+  </body>
+</html>
